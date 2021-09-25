@@ -1,0 +1,51 @@
+@mixin font-face($family, $url, $style, $weight) {
+  @font-face {
+    font-family: $family;
+    src: url($url) format("woff2");
+    font-display: swap;
+    font-style: $style;
+    font-weight: $weight;
+  }
+}
+
+@include font-face(
+  "freight-sans-pro",
+  "https://use.typekit.net/af/8dd886/000000000000000000010b5c/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3",
+  normal,
+  500
+);
+
+@include font-face(
+  "portada",
+  "https://use.typekit.net/af/368aa1/00000000000000007735b07b/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3",
+  normal,
+  300
+);
+
+@include font-face(
+  "portada-text",
+  "https://use.typekit.net/af/2df36c/00000000000000007735b077/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3",
+  normal,
+  400
+);
+
+@include font-face(
+  "portada-text",
+  "https://use.typekit.net/af/364c39/00000000000000007735b07d/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3",
+  italic,
+  400
+);
+
+@include font-face(
+  "portada-text",
+  "https://use.typekit.net/af/bff60b/00000000000000007735b087/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3",
+  normal,
+  700
+);
+
+@include font-face(
+  "portada-text",
+  "https://use.typekit.net/af/03b6ed/00000000000000007735b089/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3",
+  italic,
+  700
+);

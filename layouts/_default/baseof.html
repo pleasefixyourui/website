@@ -5,7 +5,12 @@
   </head>
 
   <body>
-    <h1><a href=/>{{ .Site.Title }}</a></h1>
-    {{ block "body" . }}{{ end }}
+    <h1 class="site-title">
+      <a href="/">Please Fix Your UI</a>
+    </h1>
+
+    <main>
+      {{ block "body" . }}{{ end }}
+    </main>
   </body>
 </html>

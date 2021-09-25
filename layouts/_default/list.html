@@ -1,10 +1,11 @@
 {{ define "body" }}
-  <h1>{{ .Title }}</h1>
+  <h1 class="page-title">{{ .Title }}</h1>
   {{ .Content }}
   {{ range .Pages }}
-    <article class="entry-card">
-      <h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
-      <p>{{ .Summary }}</p>
+    <article class="entry-block">
+      <h1 class="title">{{ .Title }}</h1>
+      <a class="permalink" href="{{ .Permalink }}">Permalink</a>
+      {{ .Content }}
     </article>
   {{ end }}
 {{ end }}

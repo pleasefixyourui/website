@@ -21,34 +21,18 @@ body {
     left: auto;
     right: auto;
   }
+
+  font-family: portada-text;
 }
 
 body * + * {
   margin-top: 1rem;
 }
 
-body {
-  $hue: 267;
-  color: hsl($hue, 25%, 20%);
-  background-color: hsl($hue, 20%, 92%);
+@import "fonts";
+@import "color";
+@import "links";
 
-  @media (prefers-color-scheme: dark) {
-    color: hsl($hue, 20%, 75%);
-    background-color: hsl($hue, 10%, 13%);
-  }
-}
-
-a {
-  background-image: linear-gradient(currentColor, currentColor);
-  background-size: 100% 1px;
-  background-position-y: 90%;
-}
-
-.entry-card {
-  border: 1px solid;
-  padding: 1rem;
-  margin: {
-    left: -1rem;
-    right: -1rem;
-  }
-}
+@import "components/site-title";
+@import "components/page-title";
+@import "components/entry-block";

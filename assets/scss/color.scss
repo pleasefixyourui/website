@@ -1,0 +1,10 @@
+body {
+  $hue: 267;
+  color: hsl($hue, 25%, 20%);
+  background-color: hsl($hue, 20%, 92%);
+
+  @media (prefers-color-scheme: dark) {
+    color: hsl($hue, 20%, 75%);
+    background-color: hsl($hue, 10%, 13%);
+  }
+}
