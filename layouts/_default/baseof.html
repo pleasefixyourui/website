@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {{ partial "head" . }}
+  </head>
+
+  <body>
+    <h1><a href=/>{{ .Site.Title }}</a></h1>
+    {{ block "body" . }}{{ end }}
+  </body>
+</html>

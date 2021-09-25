@@ -1,0 +1,43 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  box-sizing: border-box;
+  color: inherit;
+  text-decoration: inherit;
+  background-repeat: no-repeat;
+}
+
+html {
+  font-size: 19px;
+}
+
+body {
+  padding: 2rem;
+  max-width: 32rem;
+  margin: {
+    left: auto;
+    right: auto;
+  }
+}
+
+body * + * {
+  margin-top: 1rem;
+}
+
+a {
+  background-image: linear-gradient(currentColor, currentColor);
+  background-size: 100% 1px;
+  background-position-y: 90%;
+}
+
+.entry-card {
+  border: 1px solid black;
+  padding: 1rem;
+  margin: {
+    left: -1rem;
+    right: -1rem;
+  }
+}

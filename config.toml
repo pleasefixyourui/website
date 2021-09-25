@@ -1,0 +1,6 @@
+baseURL = "https://pleasefixyourui.com"
+languageCode = "en-uk"
+title = "Please Fix Your UI"
+
+[minify.tdewolff.html]
+keepWhitespace = false
