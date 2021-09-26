@@ -33,6 +33,7 @@ body * + * {
 @import "color";
 @import "links";
 
-@import "components/site-title";
-@import "components/page-title";
 @import "components/entry-block";
+@import "components/entry-header";
+@import "components/page-header";
+@import "components/site-title";

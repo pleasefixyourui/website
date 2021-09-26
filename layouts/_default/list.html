@@ -1,10 +1,18 @@
 {{ define "body" }}
-  <h1 class="page-title">{{ .Title }}</h1>
+  <section class="page-header">
+    <h1 class="title">{{ .Title }}</h1>
+  </section>
+
   {{ .Content }}
+
   {{ range .Pages }}
     <article class="entry-block">
-      <h1 class="title">{{ .Title }}</h1>
-      <a class="permalink" href="{{ .Permalink }}">Permalink</a>
+      <header class="entry-header">
+        <h1 class="title">{{ .Title }}</h1>
+        <p class="permalink"><a href="{{ .Permalink }}">permalink</a></p>
+        <p>{{ .Date.Format "2006-01-02" }}</p>
+      </header>
+
       {{ .Content }}
     </article>
   {{ end }}

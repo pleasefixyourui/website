@@ -1,0 +1,23 @@
+.entry-header {
+  > * {
+    display: inline;
+  }
+
+  > * + * {
+    margin-left: 1rem;
+
+    &::before {
+      content: "•";
+      margin-right: 1rem;
+      opacity: 0.5;
+    }
+  }
+
+  > .title {
+    font-weight: 800;
+  }
+
+  > :not(.title) {
+    opacity: 0.5;
+  }
+}
