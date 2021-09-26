@@ -31,6 +31,13 @@ body :not(source) + * {
   margin-top: 2rem;
 }
 
+em {
+  font-style: italic;
+}
+strong {
+  font-weight: 700;
+}
+
 @import "fonts";
 @import "color";
 @import "links";
