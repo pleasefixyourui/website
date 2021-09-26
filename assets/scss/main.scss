@@ -26,15 +26,17 @@ body {
   font-variant-numeric: oldstyle-nums;
 }
 
-body * + * {
-  margin-top: 1rem;
+body :not(source) + * {
+  margin-top: 2rem;
 }
 
 @import "fonts";
 @import "color";
 @import "links";
+@import "images";
 
 @import "components/entry-block";
 @import "components/entry-header";
 @import "components/page-header";
 @import "components/site-title";
+@import "components/window";

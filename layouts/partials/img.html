@@ -1,0 +1,13 @@
+{{ $path := printf "img/%s/%s.png" .title .path }}
+
+{{ $img := resources.Get $path }}
+{{ $largeWebp := $img.Fit "2048x2048 webp text q95" }}
+{{ $smallWebp := $img.Fit "512x512 webp text q95" }}
+{{ $fallback := $img.Fit "512x512 png" }}
+
+
+<picture>
+  <source srcset="{{ $largeWebp.Permalink }}" media="(min-width: 512px)" />
+  <source srcset="{{ $smallWebp.Permalink }}" />
+  <img src="{{ $fallback.Permalink }}" />
+</picture>
