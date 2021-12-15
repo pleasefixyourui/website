@@ -1,0 +1,17 @@
+.sidebar {
+  grid-column-start: full-start;
+  grid-column-end: sidebar;
+  grid-row: 2;
+
+  font-size: 0.8rem;
+  text-shadow: 0 1px white;
+
+  border-bottom: 1px solid $bottom-window-border-color;
+  border-left: 1px solid $window-border-color;
+  border-right: 1px solid #c6c6c6;
+  border-bottom-left-radius: $macos-window-border-radius;
+
+  background-image: linear-gradient(#e7ebf1, #cfd8e1);
+
+  padding: 0.2rem 0.5rem;
+}

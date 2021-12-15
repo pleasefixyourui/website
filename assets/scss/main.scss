@@ -57,3 +57,19 @@ body.big-sur {
   @import "components/big-sur/traffic-lights";
   @import "components/big-sur/window-content";
 }
+
+body.lion {
+  font-family: "Lucida Grande", "Lucida Sans", sans-serif;
+  line-height: 1.7;
+  background-image: url(https://512pixels.net/downloads/macos-wallpapers-6k/10-7-6k.jpg);
+
+  $macos-window-border-radius: 0.25rem;
+  $window-border-color: #8b8b8b;
+  $bottom-window-border-color: #656565;
+
+  @import "components/lion/macos-window";
+  @import "components/lion/sidebar";
+  @import "components/lion/toolbar";
+  @import "components/lion/traffic-lights";
+  @import "components/lion/window-content";
+}
