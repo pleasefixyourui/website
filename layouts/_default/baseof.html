@@ -48,12 +48,44 @@
           </div>
 
           <div class="version-selector">
-            <p class="choice selected">Big Sur era</p>
-            <p class="choice">Yosemite era</p>
-            <p class="choice">Lion era</p>
+            <p id="big-sur" class="choice selected">Big Sur era</p>
+            <p id="yosemite" class="choice">Yosemite era</p>
+            <p id="lion" class="choice">Lion era</p>
           </div>
         </div>
       </div>
     </div>
+
+    <script>
+      const bigSur = document.getElementById("big-sur");
+      const yosemite = document.getElementById("yosemite");
+      const lion = document.getElementById("lion");
+
+      bigSur.onclick = () => {
+        yosemite.classList.remove("selected");
+        lion.classList.remove("selected");
+        bigSur.classList.add("selected");
+
+        document.body.className = "big-sur";
+      };
+
+      yosemite.onclick = () => {
+        alert("unimplemented");
+
+        // bigSur.classList.remove("selected");
+        // lion.classList.remove("selected");
+        // yosemite.classList.add("selected");
+
+        // document.body.className = "yosemite";
+      };
+
+      lion.onclick = () => {
+        bigSur.classList.remove("selected");
+        yosemite.classList.remove("selected");
+        lion.classList.add("selected");
+
+        document.body.className = "lion";
+      };
+    </script>
   </body>
 </html>
