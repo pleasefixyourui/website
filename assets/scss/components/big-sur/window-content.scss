@@ -5,8 +5,4 @@
   padding-top: $window-content-padding + $toolbar-height;
 
   background-color: white;
-
-  :not(source) + * {
-    margin-top: 2rem;
-  }
 }
