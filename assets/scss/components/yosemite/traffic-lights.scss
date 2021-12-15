@@ -1,0 +1,27 @@
+.traffic-lights {
+  position: absolute;
+  left: 0;
+
+  display: flex;
+  justify-content: space-between;
+  width: 2.7rem;
+
+  > .traffic-light {
+    width: 0.64rem;
+    height: 0.64rem;
+    border-radius: 99rem;
+    border: 0.5px solid rgba(black, 0.2);
+  }
+
+  > .close {
+    background-color: #ff5f57;
+  }
+
+  > .minimize {
+    background-color: #ffbb2e;
+  }
+
+  > .fullscreen {
+    background-color: #27c840;
+  }
+}

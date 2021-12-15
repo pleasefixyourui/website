@@ -70,13 +70,11 @@
       };
 
       yosemite.onclick = () => {
-        alert("unimplemented");
+        bigSur.classList.remove("selected");
+        lion.classList.remove("selected");
+        yosemite.classList.add("selected");
 
-        // bigSur.classList.remove("selected");
-        // lion.classList.remove("selected");
-        // yosemite.classList.add("selected");
-
-        // document.body.className = "yosemite";
+        document.body.className = "yosemite";
       };
 
       lion.onclick = () => {

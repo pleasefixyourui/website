@@ -1,0 +1,27 @@
+.window-top {
+  grid-column: full;
+  grid-row: 1;
+
+  display: flex;
+  justify-content: center;
+
+  position: relative;
+
+  border-top: 1px solid #f3f3f3;
+  border-bottom: 1px solid #a7a7a7;
+  border-top-left-radius: $macos-window-border-radius;
+  border-top-right-radius: $macos-window-border-radius;
+  background-image: linear-gradient(rgba(#e1e1e1, 0.9), rgba(#c9c9c9, 0.9));
+  backdrop-filter: blur(25px);
+
+  font-size: 0.8rem;
+
+  color: #535353;
+
+  > .traffic-lights {
+    margin: {
+      top: 0.3rem;
+      left: 0.4rem;
+    }
+  }
+}

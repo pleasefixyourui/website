@@ -1,0 +1,10 @@
+.window-content {
+  grid-column-start: sidebar;
+  grid-column-end: full-end;
+  grid-row: full;
+
+  padding-top: $window-content-padding + 3rem;
+  border-top-right-radius: $macos-window-border-radius;
+  border-bottom-right-radius: $macos-window-border-radius;
+  background-color: white;
+}

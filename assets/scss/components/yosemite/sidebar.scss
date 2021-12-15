@@ -1,0 +1,23 @@
+.sidebar {
+  grid-column-start: full-start;
+  grid-column-end: sidebar;
+  grid-row: 2;
+
+  font-size: 0.75rem;
+
+  border-right: 1px solid #d6d6d6;
+  border-bottom-left-radius: $macos-window-border-radius;
+
+  background-color: rgba(white, 0.6);
+  backdrop-filter: blur(50px);
+
+  padding-top: 0.5rem;
+
+  > .entry {
+    padding: 0.1rem 0.5rem;
+  }
+
+  > .selected {
+    backdrop-filter: saturate(250%) brightness(90%);
+  }
+}
