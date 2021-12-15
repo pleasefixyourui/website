@@ -11,10 +11,27 @@
       </main>
 
       <div class="sidebar">
-        <p class="entry selected"><a href="/">Please Fix Your UI</a></p>
-        <p class="entry">Big Sur era</p>
-        <p class="entry">Yosemite era</p>
-        <p class="entry">Lion era</p>
+        <p
+          class="
+          entry
+          {{ if eq .Permalink .Site.BaseURL }}
+            selected
+          {{ end }}"
+        >
+          <a href="/">Please Fix Your UI</a>
+        </p>
+
+        {{ range .Site.RegularPages }}
+          <p
+            class="
+            entry
+            {{ if eq .Permalink $.Permalink }}
+              selected
+            {{ end }}"
+          >
+            <a href="{{ .Permalink }}">{{ .Title }}</a>
+          </p>
+        {{ end }}
       </div>
 
       <div class="toolbar">
