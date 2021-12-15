@@ -1,0 +1,35 @@
+.toolbar {
+  grid-column: full;
+  height: $toolbar-height;
+  align-items: center;
+
+  display: grid;
+  grid-template-columns: inherit;
+
+  z-index: 1;
+
+  > .traffic-lights {
+    margin-left: 1rem;
+  }
+
+  > .content {
+    grid-column-start: sidebar;
+    grid-column-end: full-end;
+
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding-left: 1rem;
+
+    background-color: rgba(white, 0.85);
+    backdrop-filter: blur(25px);
+
+    border-top-right-radius: $macos-window-border-radius;
+    box-shadow: 0 5px 5px -5px rgba(black, 0.3);
+
+    > .title {
+      font-weight: 700;
+      font-size: 0.8rem;
+    }
+  }
+}

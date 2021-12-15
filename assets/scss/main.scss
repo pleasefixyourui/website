@@ -15,20 +15,17 @@ html {
 }
 
 body {
+  height: 100vh;
   padding: 2rem;
-  max-width: 32rem;
-  margin: {
-    left: auto;
-    right: auto;
-  }
+  padding-bottom: 5rem;
 
-  font-family: portada-text;
-  font-variant-numeric: oldstyle-nums;
+  font-family: system-ui;
   line-height: 1.7;
-}
 
-body :not(source) + * {
-  margin-top: 2rem;
+  background-image: url(https://media.idownloadblog.com/wp-content/uploads/2020/06/macOS-Big-Sur-Vector-Wave-Wallpaper-iDownloadBlog.jpg);
+  background-size: cover;
+  background-position: 50%;
+  background-attachment: fixed;
 }
 
 em {
@@ -38,13 +35,18 @@ strong {
   font-weight: 700;
 }
 
-@import "fonts";
-@import "color";
 @import "links";
 @import "media";
 
+$toolbar-height: 3rem;
+$macos-window-border-radius: 10px;
+
 @import "components/entry-block";
 @import "components/entry-header";
+@import "components/macos-window";
 @import "components/page-header";
-@import "components/site-title";
+@import "components/sidebar";
+@import "components/toolbar";
+@import "components/traffic-lights";
+@import "components/window-content";
 @import "components/window-screenshot";

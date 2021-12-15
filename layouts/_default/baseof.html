@@ -5,12 +5,29 @@
   </head>
 
   <body>
-    <h1 class="site-title">
-      <a href="/">Please Fix Your UI</a>
-    </h1>
+    <div class="macos-window">
+      <main class="window-content">
+        {{ block "body" . }}{{ end }}
+      </main>
 
-    <main>
-      {{ block "body" . }}{{ end }}
-    </main>
+      <div class="sidebar">
+        <p><a href="/">Please Fix Your UI</a></p>
+        <p>Big Sur era</p>
+        <p>Yosemite era</p>
+        <p>Lion era</p>
+      </div>
+
+      <div class="toolbar">
+        <div class="traffic-lights">
+          <div class="traffic-light close"></div>
+          <div class="traffic-light minimize"></div>
+          <div class="traffic-light fullscreen"></div>
+        </div>
+
+        <div class="content">
+          <p class="title">{{ .Title }}</p>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
