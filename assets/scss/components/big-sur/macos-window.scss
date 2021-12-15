@@ -1,0 +1,16 @@
+.macos-window {
+  border-radius: $macos-window-border-radius;
+  overflow: hidden; // crop non-rounded corners of children
+
+  box-shadow: 0 0 1.5px rgba(black, 0.8), 0 1rem 1.5rem 0.5rem rgba(black, 0.2);
+
+  display: grid;
+  grid-template-columns: [full-start] 10rem [sidebar] 1fr [full-end];
+
+  // put everything on the same row
+  > * {
+    grid-row: 1;
+  }
+
+  position: relative;
+}
