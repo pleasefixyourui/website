@@ -18,6 +18,10 @@ body {
   height: 100vh;
   padding: 2rem;
   padding-bottom: 5rem;
+
+  background-size: cover;
+  background-position: 50%;
+  background-attachment: fixed;
 }
 
 em {
@@ -39,11 +43,7 @@ strong {
 body.big-sur {
   font-family: system-ui;
   line-height: 1.7;
-
   background-image: url(https://media.idownloadblog.com/wp-content/uploads/2020/06/macOS-Big-Sur-Vector-Wave-Wallpaper-iDownloadBlog.jpg);
-  background-size: cover;
-  background-position: 50%;
-  background-attachment: fixed;
 
   $toolbar-height: 3rem;
   $macos-window-border-radius: 10px;
