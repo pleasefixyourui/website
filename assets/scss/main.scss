@@ -31,6 +31,7 @@ strong {
   font-weight: 700;
 }
 
+@import "util";
 @import "links";
 @import "media";
 
@@ -54,7 +55,9 @@ body.big-sur {
   @import "components/big-sur/sidebar";
   @import "components/big-sur/toolbar";
   @import "components/big-sur/traffic-lights";
+  @import "components/big-sur/version-selector";
   @import "components/big-sur/window-content";
+  @import "components/big-sur/window-top";
 }
 
 body.lion {
@@ -70,5 +73,7 @@ body.lion {
   @import "components/lion/sidebar";
   @import "components/lion/toolbar";
   @import "components/lion/traffic-lights";
+  @import "components/lion/version-selector";
   @import "components/lion/window-content";
+  @import "components/lion/window-top";
 }

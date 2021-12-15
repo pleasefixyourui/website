@@ -1,0 +1,9 @@
+@mixin partial-height-left-border($border-height, $thickness, $style, $color) {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: (100% - $border-height) / 2;
+  width: $thickness;
+  height: $border-height;
+  border-left: $thickness $style $color;
+}

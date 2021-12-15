@@ -1,0 +1,14 @@
+.window-top {
+  grid-column: full;
+  height: $toolbar-height;
+  align-items: center;
+
+  display: grid;
+  grid-template-columns: inherit;
+
+  z-index: 1;
+
+  > .traffic-lights {
+    margin-left: 1rem;
+  }
+}

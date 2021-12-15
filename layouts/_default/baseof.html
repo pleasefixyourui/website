@@ -34,16 +34,24 @@
         {{ end }}
       </div>
 
-      <div class="toolbar">
+      <div class="window-top">
         <div class="traffic-lights">
           <div class="traffic-light close"></div>
           <div class="traffic-light minimize"></div>
           <div class="traffic-light fullscreen"></div>
         </div>
 
-        <div class="content">
-          <p class="title">{{ .Title }}</p>
-          <p class="info">{{ block "extra-toolbar-info" . }}{{ end }}</p>
+        <div class="toolbar">
+          <div class="title-and-info">
+            <p class="title">{{ .Title }}</p>
+            <p class="info">{{ block "extra-toolbar-info" . }}{{ end }}</p>
+          </div>
+
+          <div class="version-selector">
+            <p class="choice selected">Big Sur era</p>
+            <p class="choice">Yosemite era</p>
+            <p class="choice">Lion era</p>
+          </div>
         </div>
       </div>
     </div>
