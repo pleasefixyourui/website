@@ -2,8 +2,7 @@
   grid-column-start: sidebar;
   grid-column-end: full-end;
 
-  padding: 2rem;
-  padding-top: 2rem + $toolbar-height;
+  padding-top: $window-content-padding + $toolbar-height;
 
   background-color: white;
 

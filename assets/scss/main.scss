@@ -34,6 +34,8 @@ strong {
 @import "links";
 @import "media";
 
+$window-content-padding: 2rem;
+
 @import "components/entry-block";
 @import "components/entry-header";
 @import "components/macos-window";
