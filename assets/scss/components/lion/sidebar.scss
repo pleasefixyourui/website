@@ -3,7 +3,7 @@
   grid-column-end: sidebar;
   grid-row: 2;
 
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   text-shadow: 0 1px white;
 
   border-bottom: 1px solid $bottom-window-border-color;
@@ -13,5 +13,15 @@
 
   background-image: linear-gradient(#e7ebf1, #cfd8e1);
 
-  padding: 0.2rem 0.5rem;
+  padding-top: 0.5rem;
+
+  > .entry {
+    padding: 0.1rem 0.5rem;
+  }
+
+  > .selected {
+    color: white;
+    background-image: linear-gradient(#43adeb, #1a8add);
+    text-shadow: 0 1px rgba(black, 0.4);
+  }
 }

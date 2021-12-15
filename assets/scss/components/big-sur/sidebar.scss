@@ -4,7 +4,8 @@
 
   padding: {
     top: $toolbar-height;
-    left: 0.75rem;
+    left: 0.5rem;
+    right: 0.5rem;
   }
 
   font-size: 0.75rem;
@@ -15,4 +16,14 @@
   border-right: 1px solid #e5e5e5;
   border-top-left-radius: $macos-window-border-radius;
   border-bottom-left-radius: $macos-window-border-radius;
+
+  > .entry {
+    padding: 0.2rem;
+    padding-left: 0.5rem;
+  }
+
+  > .selected {
+    background-color: rgba(black, 0.1);
+    border-radius: 5px;
+  }
 }
