@@ -1,7 +1,4 @@
 {{ define "body" }}
-  <section class="page-header">
-    <h1 class="title">{{ .Title }}</h1>
-  </section>
 
   {{ .Content }}
 
@@ -16,4 +13,8 @@
       {{ .Content }}
     </article>
   {{ end }}
+{{ end }}
+
+{{ define "extra-toolbar-info" }}
+  {{ len .Pages }} entries
 {{ end }}

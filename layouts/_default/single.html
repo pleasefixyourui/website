@@ -1,8 +1,7 @@
 {{ define "body" }}
-  <section class="page-header">
-    <h1 class="title">{{ .Title }}</h1>
-    <p class="date">{{ .Date.Format "2006-01-02" }}</p>
-  </section>
-
   {{ .Content }}
+{{ end }}
+
+{{ define "extra-toolbar-info" }}
+  {{ .Date.Format "2006-01-02" }}
 {{ end }}
