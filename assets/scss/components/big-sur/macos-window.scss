@@ -2,6 +2,7 @@
   border-radius: $macos-window-border-radius;
   overflow: hidden; // crop non-rounded corners of children
 
+  border-top: 1px solid rgba(white, 0.5);
   box-shadow: 0 0 1.5px rgba(black, 0.8), 0 1rem 1.5rem 0.5rem rgba(black, 0.2);
 
   display: grid;

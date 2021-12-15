@@ -21,9 +21,10 @@
     height: 100%;
     padding-left: 1rem;
 
-    background-color: rgba(white, 0.85);
+    background-color: rgba(#fdfdfd, 0.85);
     backdrop-filter: blur(25px);
 
+    border-bottom: 1px solid #e5e5e5;
     border-top-right-radius: $macos-window-border-radius;
     box-shadow: 0 5px 5px -5px rgba(black, 0.3);
 
