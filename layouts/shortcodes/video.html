@@ -1,0 +1,5 @@
+{{ $path := printf "media/%s/%s.mp4" $.Page.File.BaseFileName (.Get 0) }}
+{{ $video := resources.Get $path }}
+<video autoplay muted loop>
+  <source src="{{ $video.Permalink }}" type="video/mp4" />
+</video>

@@ -1,4 +1,4 @@
-{{ $path := printf "img/%s/%s.png" .title .path }}
+{{ $path := printf "media/%s/%s.png" .title .path }}
 
 {{ $img := resources.Get $path }}
 {{ $largeWebp := $img.Fit "2048x2048 webp text q95" }}
